@@ -5,59 +5,81 @@
         a{
             text-decoration: none;
         }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align:right;
+        }
+        li{
+            position:relative;
+            bottom: 15px;
+            right: 6px;
+            display: inline;
+            padding-left: 10px;
+        }
         .gmail-link{
-            position: relative;
-            left:80%;
-            top: 10px;
-            font-size: 14px;
+            font-size: 1.1em;
             font-family: Arial, Helvetica, sans-serif;
         }
         .images-link{
-            position: relative;
-            left: 80.6%;
-            top: 10px;
-            font-size: 14px;
+            font-size: 1.1em;
             font-family: Arial, Helvetica, sans-serif;
         }
         .google-apps{
-            
+            position: relative;
+            top: 15px;
+            max-width:3%;
+        }
+        .sign-in-button{
+            background-color: blue;
+            width: 95px;
+            height: 40px;
+            border-radius: 6px;
+            font-size: 1.1em;
         }
         .google-logo{
             position: relative;
             left: 40%;
-            top: 35px;
-            
+            top: 0px;      
         }
         .search-box{
             border-radius: 40px;
             position: relative;
             left: 29%;
-            top: 55px;
+            top: 0px;
             width: 575px;
             height: 40px;
             margin:auto;
+            margin: 1.1em;
         }
         .google-search-button{
             position: relative;
             left:40%;
-            top: 85px;
+            top: 0px;
             height: 30px;
             background-color: rgb(255, 255, 255);
             border-radius: 5px;
+            margin: 1.1em;
         }
         .I-am-feeling-lucky-button{
             position: relative;
-            left:40.6%;
-            top: 85px;
+            left:39%;
+            top: 0px;
             height: 30px;
             background-color: rgb(255, 255, 255);
             border-radius: 5px;
         }
     </style>
     <header>
-           <a class="gmail-link" href="https://www.google.com/intl/en-GB/gmail/about/" >Gmail</a> 
-            <a class="images-link" href="https://www.google.co.in/imghp?hl=en&ogbl"> Images </a>
-            
+        <ul>
+            <li> <a href="https://www.google.com/intl/en-GB/gmail/about/"> Gmail </a></li>
+            <li> <a href="https://www.google.co.in/imghp?hl=en&ogbl"> Images </a></li>
+            <li><a href="https://www.google.co.in/intl/en/about/products"><img src="google apps logo.jpg" alt="Google apps link"  class="google-apps"></a></li>
+            <li> <button type="submit" value="Sign in" class="sign-in-button"> <a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" style="color:white"> Sign in</a></button></li>
+        </ul> 
     </header>
     <head>
         <div>
@@ -76,5 +98,19 @@
         <button type="submit" value="I'm Feeling Lucky" class="I-am-feeling-lucky-button">
            <a href="https://www.google.com/doodles">I'm Feeling Lucky</a> 
         </button>
+        <div style="margin: 1.05em;">
+        <ul style="list-style-type: none; margin:0; padding: 0; text-align: center;">
+            Google offered in:
+            <a href="https://en.wikipedia.org/wiki/Hindi"><li style="position: relative; bottom: 0px;">हिन्दी</li> </a>
+            <a href="https://en.wikipedia.org/wiki/Bengali_language"><li style="position: relative; bottom: 0px;">বাংলা</li></a>  
+            <a href="https://en.wikipedia.org/wiki/Telugu_language"><li style="position: relative; bottom: 0px;">తెలుగు</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Marathi_language"><li style="position: relative; bottom: 0px;">मराठी</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Tamil_language"><li style="position: relative; bottom: 0px;">தமிழ்</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Gujarati_language"><li style="position: relative; bottom: 0px;">ગુજરાતી</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Kannada"><li style="position: relative; bottom: 0px;">ಕನ್ನಡ</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Malayalam"><li style="position: relative; bottom: 0px;">മലയാളം</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Punjabi_language"><li style="position: relative; bottom: 0px;">ਪੰਜਾਬੀ</li></a> 
+        </ul>
+        </div>
     </body>
 </html>
