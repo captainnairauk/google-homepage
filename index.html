@@ -4,6 +4,7 @@
     <style>
         a{
             text-decoration: none;
+            color: inherit;
         }
         ul{
             list-style-type: none;
@@ -12,6 +13,7 @@
             font-size: small;
             font-family: Arial, Helvetica, sans-serif;
             text-align:right;
+           
         }
         li{
             position:relative;
@@ -32,6 +34,11 @@
             position: relative;
             top: 15px;
             max-width:3%;
+            border-radius: 50%;
+        }
+        .google-apps:hover{
+            box-shadow: 0 0 10px 10px #f8f9fa;
+            color: gray;
         }
         .sign-in-button{
             background-color: blue;
@@ -40,38 +47,72 @@
             border-radius: 6px;
             font-size: 1.1em;
         }
+        .sign-in-button:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.2);
+        }
         .google-logo{
-            position: relative;
-            left: 40%;
-            top: 0px;      
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+                 
         }
         .search-box{
-            border-radius: 40px;
-            position: relative;
-            left: 29%;
-            top: 0px;
-            width: 575px;
-            height: 40px;
-            margin:auto;
-            margin: 1.1em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            border: 0px thin;
+            border-radius: 50px;
+            border-style:solid;
+            width:42%;
+            height: 38px;
+
+        }
+        .search-box:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.2);
         }
         .google-search-button{
             position: relative;
             left:40%;
-            top: 0px;
+            top: 10px;
             height: 30px;
-            background-color: rgb(255, 255, 255);
+            background-color: #f8f9fa;
             border-radius: 5px;
+            border-style: hidden;
             margin: 1.1em;
+        
+        }
+        .google-search-button:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.2);
         }
         .I-am-feeling-lucky-button{
             position: relative;
             left:39%;
-            top: 0px;
+            top: 10px;
             height: 30px;
-            background-color: rgb(255, 255, 255);
+            background-color: #f8f9fa;
             border-radius: 5px;
+            border-style: hidden;
         }
+        .I-am-feeling-lucky-button:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.2);
+        }
+        .navbar{
+            display: flex;
+            position:fixed;
+            bottom: 0;
+            width:100%;
+            padding: 15px;
+            font-size: small;
+            
+        }
+        .navbar a:hover{
+            text-decoration:underline;
+        }
+       li:hover{
+           text-decoration: underline;
+       }
+       }
     </style>
     <header>
         <ul>
@@ -87,13 +128,13 @@
         </div>
         <div> 
         <form>
-            <input type="url" placeholder=" Type anything " class="search-box">
+            <input type="url" placeholder=" Search Google or type a URL.. " class="search-box">
         </form>
         </div>
     </head>
     <body>
-        <button type="submit" value="Google Search" class="google-search-button">
-            Google Search
+        <button type="submit" value="Google Search" class="google-search-button" ><a href="">Google Search</a>
+            
         </button>
         <button type="submit" value="I'm Feeling Lucky" class="I-am-feeling-lucky-button">
            <a href="https://www.google.com/doodles">I'm Feeling Lucky</a> 
@@ -101,16 +142,26 @@
         <div style="margin: 1.05em;">
         <ul style="list-style-type: none; margin:0; padding: 0; text-align: center;">
             Google offered in:
-            <a href="https://en.wikipedia.org/wiki/Hindi"><li style="position: relative; bottom: 0px;">हिन्दी</li> </a>
-            <a href="https://en.wikipedia.org/wiki/Bengali_language"><li style="position: relative; bottom: 0px;">বাংলা</li></a>  
-            <a href="https://en.wikipedia.org/wiki/Telugu_language"><li style="position: relative; bottom: 0px;">తెలుగు</li></a> 
-            <a href="https://en.wikipedia.org/wiki/Marathi_language"><li style="position: relative; bottom: 0px;">मराठी</li></a> 
-            <a href="https://en.wikipedia.org/wiki/Tamil_language"><li style="position: relative; bottom: 0px;">தமிழ்</li></a> 
-            <a href="https://en.wikipedia.org/wiki/Gujarati_language"><li style="position: relative; bottom: 0px;">ગુજરાતી</li></a> 
-            <a href="https://en.wikipedia.org/wiki/Kannada"><li style="position: relative; bottom: 0px;">ಕನ್ನಡ</li></a> 
-            <a href="https://en.wikipedia.org/wiki/Malayalam"><li style="position: relative; bottom: 0px;">മലയാളം</li></a> 
-            <a href="https://en.wikipedia.org/wiki/Punjabi_language"><li style="position: relative; bottom: 0px;">ਪੰਜਾਬੀ</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Hindi"><li style="position: relative; bottom: 0px; color: blue;">हिन्दी</li> </a>
+            <a href="https://en.wikipedia.org/wiki/Bengali_language"><li style="position: relative; bottom: 0px;color: blue">বাংলা</li></a>  
+            <a href="https://en.wikipedia.org/wiki/Telugu_language"><li style="position: relative; bottom: 0px;color: blue">తెలుగు</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Marathi_language"><li style="position: relative; bottom: 0px;color: blue">मराठी</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Tamil_language"><li style="position: relative; bottom: 0px;color: blue">தமிழ்</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Gujarati_language"><li style="position: relative; bottom: 0px; color: blue">ગુજરાતી</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Kannada"><li style="position: relative; bottom: 0px; color: blue">ಕನ್ನಡ</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Malayalam"><li style="position: relative; bottom: 0px; color: blue">മലയാളം</li></a> 
+            <a href="https://en.wikipedia.org/wiki/Punjabi_language"><li style="position: relative; bottom: 0px; color: blue">ਪੰਜਾਬੀ</li></a> 
         </ul>
+        </div>
+        <div class="navbar">
+            <a style="position: relative; left: 1.5%; " href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1" >About</a>
+            <a style="position: relative; left: 3.5%;" href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a style="position: relative; left: 5.5%;" href="https://www.google.com/intl/en_in/business/">Business</a>
+            <a style="position: relative; left: 7.5%;" href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+            <a style="position: relative; left: 58%;" href="https://policies.google.com/privacy?hl=en-IN&fg=1"> Privacy </a>
+            <a style="position: relative; left: 60%;" href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+            <a style="position: relative; left: 62%;" href="">Settings</a>
+
         </div>
     </body>
 </html>
