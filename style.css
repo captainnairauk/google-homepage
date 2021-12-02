@@ -17,6 +17,10 @@ body{
     gap: 15px;
 }
 
+.header ul li{
+    cursor: pointer;
+}
+
 .header{
     display: flex;
     justify-content: end;
@@ -77,18 +81,33 @@ body{
 input{
     border: none;
     padding: 10px;
-    margin: 10px;
+    padding-left: 40px;
+    margin: 0;
     height: 20px;
     width: 500px;
     border: 1px solid lightgray;
     outline:none;
-    border-radius: 50px;
+    border-radius: 50px;  
 }
 
 input:hover{
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
+#input_container { 
+    position:relative; 
+    padding:0; 
+    margin:0; 
+}
+
+#input_img { 
+    position:absolute; 
+    bottom:2px; 
+    left: 0px; 
+    width: 17px;; 
+    height: 16px; 
+}
+ 
 .button-container{
     display: flex;
     gap: 10px;
@@ -147,6 +166,10 @@ button:hover {
     height: 48px;
 }
 
+#india{
+    text-decoration: none;
+    color: #70757a;
+}
 
 .lower-footer{
     display: flex;
